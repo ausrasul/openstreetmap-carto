@@ -1210,7 +1210,7 @@ Layer:
           ORDER BY way_area DESC
         ) AS country_names
     properties:
-      minzoom: 2
+      minzoom: 22
   - id: capital-names
     geometry: point
     <<: *extents
@@ -1231,8 +1231,8 @@ Layer:
           ORDER BY population DESC
         ) AS capital_names
     properties:
-      minzoom: 3
-      maxzoom: 15
+      minzoom: 22
+      maxzoom: 22
   - id: state-names
     class: state
     geometry: point
@@ -1254,7 +1254,7 @@ Layer:
           ORDER BY way_area DESC
         ) AS state_names
     properties:
-      minzoom: 4
+      minzoom: 22
   - id: placenames-medium
     geometry: point
     <<: *extents
@@ -1298,8 +1298,8 @@ Layer:
         ) AS placenames_medium
     properties:
       cache-features: true
-      minzoom: 4
-      maxzoom: 15
+      minzoom: 22
+      maxzoom: 22
   - id: placenames-small
     geometry: point
     <<: *extents
@@ -1332,7 +1332,7 @@ Layer:
         ) AS placenames_small
     properties:
       cache-features: true
-      minzoom: 12
+      minzoom: 22
   - id: stations
     geometry: point
     <<: *extents
@@ -1382,7 +1382,7 @@ Layer:
         ) AS stations
     properties:
       cache-features: true
-      minzoom: 12
+      minzoom: 22
   - id: amenity-points
     class: points
     geometry: point
@@ -1681,8 +1681,8 @@ Layer:
             osm_id
         ) AS roads_text_ref_low_zoom
     properties:
-      minzoom: 10
-      maxzoom: 12
+      minzoom: 22
+      maxzoom: 22
   - id: junctions
     geometry: point
     <<: *extents
@@ -1728,7 +1728,7 @@ Layer:
           ORDER BY way_area DESC
         ) AS bridge_text
     properties:
-      minzoom: 11
+      minzoom: 22
   - id: roads-text-ref
     geometry: linestring
     <<: *extents
@@ -1780,7 +1780,7 @@ Layer:
             osm_id
         ) AS roads_text_ref
     properties:
-      minzoom: 13
+      minzoom: 22
   - id: roads-area-text-name
     geometry: polygon
     <<: *extents
@@ -1806,7 +1806,7 @@ Layer:
           ORDER BY way_area DESC
         ) AS roads_area_text_name
     properties:
-      minzoom: 15
+      minzoom: 22
   - id: roads-text-name
     class: directions
     geometry: linestring
@@ -1862,7 +1862,7 @@ Layer:
         ) AS roads_text_name
     properties:
       cache-features: true
-      minzoom: 13
+      minzoom: 22
   - id: paths-text-name
     class: directions
     geometry: linestring
@@ -1890,7 +1890,7 @@ Layer:
         ) AS paths_text_name
     properties:
       cache-features: true
-      minzoom: 15
+      minzoom: 22
   - id: railways-text-name
     geometry: linestring
     <<: *extents
@@ -1921,7 +1921,7 @@ Layer:
             l.osm_id DESC -- Force an ordering for railways of the same name, e.g. dualized rails
         ) AS railways_text_name
     properties:
-      minzoom: 11
+      minzoom: 22
   - id: roads-text-ref-minor
     geometry: linestring
     <<: *extents
@@ -1966,7 +1966,7 @@ Layer:
             osm_id
         ) AS roads_text_ref_minor
     properties:
-      minzoom: 15
+      minzoom: 22
   - id: text-poly-low-zoom
     class: text-low-zoom
     geometry: polygon
@@ -2004,8 +2004,8 @@ Layer:
           ORDER BY way_area DESC
         ) AS text_poly_low_zoom
     properties:
-      minzoom: 0
-      maxzoom: 9
+      minzoom: 22
+      maxzoom: 22
   - id: text-line
     geometry: linestring
     <<: *extents
@@ -2029,7 +2029,7 @@ Layer:
             AND name IS NOT NULL
         ) AS text_line
     properties:
-      minzoom: 10
+      minzoom: 22
   - id: text-point
     geometry: point
     <<: *extents
@@ -2039,7 +2039,7 @@ Layer:
       # see https://github.com/gravitystorm/openstreetmap-carto/pull/1349#issuecomment-77805678
       table: *amenity_points_sql
     properties:
-      minzoom: 10
+      minzoom: 22
   - id: building-text
     geometry: polygon
     <<: *extents
@@ -2058,7 +2058,7 @@ Layer:
           ORDER BY way_area DESC
         ) AS building_text
     properties:
-      minzoom: 14
+      minzoom: 22
   - id: interpolation
     geometry: linestring
     <<: *extents
@@ -2099,7 +2099,7 @@ Layer:
           ORDER BY way_pixels DESC NULLS LAST
         ) AS addresses
     properties:
-      minzoom: 17
+      minzoom: 22
   - id: water-lines-text
     geometry: linestring
     <<: *extents
@@ -2125,7 +2125,7 @@ Layer:
           ORDER BY COALESCE(layer,0)
         ) AS water_lines_text
     properties:
-      minzoom: 13
+      minzoom: 22
   - id: ferry-routes-text
     geometry: linestring
     <<: *extents
@@ -2141,7 +2141,7 @@ Layer:
             AND name IS NOT NULL
         ) AS ferry_routes_text
     properties:
-      minzoom: 13
+      minzoom: 22
   - id: admin-text
     geometry: linestring
     <<: *extents
@@ -2161,7 +2161,7 @@ Layer:
           ORDER BY admin_level::integer ASC, way_area DESC
         ) AS admin_text
     properties:
-      minzoom: 11
+      minzoom: 22
   - id: protected-areas-text
     geometry: linestring
     <<: *extents
@@ -2181,7 +2181,7 @@ Layer:
             AND name IS NOT NULL
         ) AS protected_areas_text
     properties:
-      minzoom: 13
+      minzoom: 22
   - id: amenity-low-priority
     geometry: point
     <<: *extents
@@ -2262,4 +2262,4 @@ Layer:
       # see https://github.com/gravitystorm/openstreetmap-carto/pull/1349#issuecomment-77805678
       table: *amenity_low_priority_sql
     properties:
-      minzoom: 10
+      minzoom: 22
