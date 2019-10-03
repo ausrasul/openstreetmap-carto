@@ -152,7 +152,7 @@ Layer:
           WHERE man_made = 'cutline'
         ) AS landcover_line
     properties:
-      minzoom: 14
+      minzoom: 22
   - id: icesheet-poly
     geometry: polygon
     <<: *extents
@@ -160,7 +160,7 @@ Layer:
       file: data/antarctica-icesheet-polygons-3857/icesheet_polygons.shp
       type: shape
     properties:
-      minzoom: 5
+      minzoom: 22
   - id: water-lines-casing
     geometry: linestring
     <<: *extents
@@ -178,7 +178,7 @@ Layer:
           WHERE waterway IN ('stream', 'drain', 'ditch')
         ) AS water_lines_casing
     properties:
-      minzoom: 13
+      minzoom: 22
   - id: water-lines-low-zoom
     geometry: linestring
     <<: *extents
@@ -195,8 +195,8 @@ Layer:
           WHERE waterway = 'river'
         ) AS water_lines_low_zoom
     properties:
-      minzoom: 8
-      maxzoom: 11
+      minzoom: 22
+      maxzoom: 22
   - id: water-lines
     class: water-lines
     geometry: linestring
@@ -219,7 +219,7 @@ Layer:
           ORDER BY COALESCE(layer,0)
         ) AS water_lines
     properties:
-      minzoom: 12
+      minzoom: 22
   - id: water-areas
     geometry: polygon
     <<: *extents
@@ -296,7 +296,7 @@ Layer:
         ) AS landcover_area_symbols
     properties:
       cache-features: true
-      minzoom: 5
+      minzoom: 22
   - id: icesheet-outlines
     geometry: linestring
     <<: *extents
@@ -304,7 +304,7 @@ Layer:
       file: data/antarctica-icesheet-outlines-3857/icesheet_outlines.shp
       type: shape
     properties:
-      minzoom: 5
+      minzoom: 22
   - id: marinas-area
     geometry: polygon
     <<: *extents
@@ -317,7 +317,7 @@ Layer:
           WHERE leisure = 'marina'
         ) AS marinas_area
     properties:
-      minzoom: 14
+      minzoom: 22
   - id: water-barriers-line
     geometry: linestring
     <<: *extents
@@ -332,7 +332,7 @@ Layer:
           WHERE waterway IN ('dam', 'weir', 'lock_gate')
         ) AS water_barriers_line
     properties:
-      minzoom: 13
+      minzoom: 22
   - id: water-barriers-poly
     geometry: polygon
     <<: *extents
@@ -386,7 +386,7 @@ Layer:
           WHERE man_made IN ('pier', 'breakwater', 'groyne')
         ) AS piers_poly
     properties:
-      minzoom: 12
+      minzoom: 22
   - id: piers-line
     geometry: linestring
     <<: *extents
@@ -399,7 +399,7 @@ Layer:
           WHERE man_made IN ('pier', 'breakwater', 'groyne')
         ) AS piers_line
     properties:
-      minzoom: 12
+      minzoom: 22
   - id: water-barriers-point
     geometry: point
     <<: *extents
@@ -412,7 +412,7 @@ Layer:
           WHERE waterway IN ('dam', 'weir', 'lock_gate')
         ) AS water_barriers_points
     properties:
-      minzoom: 17
+      minzoom: 22
   - id: bridge
     geometry: polygon
     <<: *extents
@@ -428,7 +428,7 @@ Layer:
           WHERE man_made = 'bridge'
         ) AS bridge
     properties:
-      minzoom: 12
+      minzoom: 22
   - id: buildings
     geometry: polygon
     <<: *extents
@@ -576,7 +576,7 @@ Layer:
             OR tourism = 'zoo'
         ) AS tourism_boundary
     properties:
-      minzoom: 10
+      minzoom: 22
   - id: line-barriers
     class: barriers
     geometry: linestring
@@ -598,7 +598,7 @@ Layer:
           ) AS features
         ) AS line_barriers
     properties:
-      minzoom: 14
+      minzoom: 22
   - id: cliffs
     geometry: linestring
     <<: *extents
@@ -612,7 +612,7 @@ Layer:
         ) AS cliffs
     properties:
       cache-features: true
-      minzoom: 13
+      minzoom: 22
   - id: area-barriers
     class: barriers
     geometry: polygon
@@ -634,7 +634,7 @@ Layer:
           ) AS features
         ) AS area_barriers
     properties:
-      minzoom: 16
+      minzoom: 22
   - id: ferry-routes
     geometry: linestring
     <<: *extents
@@ -678,7 +678,7 @@ Layer:
           ORDER BY p.way, v.prio
         ) AS turning_circle_sql
     properties:
-      minzoom: 15
+      minzoom: 22
   - id: highway-area-casing
     geometry: polygon
     <<: *extents
@@ -704,7 +704,7 @@ Layer:
           ORDER BY COALESCE(layer,0), way_area DESC
         ) AS highway_area_casing
     properties:
-      minzoom: 14
+      minzoom: 22
   - id: roads-casing
     geometry: linestring
     <<: *extents
@@ -803,7 +803,7 @@ Layer:
         ) AS roads_sql
     properties:
       cache-features: true
-      minzoom: 10
+      minzoom: 22
   - id: highway-area-fill
     # FIXME: No geometry?
     <<: *extents
@@ -865,7 +865,7 @@ Layer:
           WHERE aerialway IS NOT NULL
         ) AS aerialways
     properties:
-      minzoom: 12
+      minzoom: 22
   - id: roads-low-zoom
     geometry: linestring
     <<: *extents
@@ -1024,7 +1024,7 @@ Layer:
           WHERE highway = 'bus_guideway'
         ) AS guideways
     properties:
-      minzoom: 11
+      minzoom: 22
   - id: entrances
     geometry: point
     <<: *extents
@@ -1041,7 +1041,7 @@ Layer:
             OR (tags->'indoor') IS NULL))
         AS entrances
     properties:
-      minzoom: 18
+      minzoom: 22
   - id: aeroways
     geometry: linestring
     <<: *extents
@@ -1059,7 +1059,7 @@ Layer:
         ) AS aeroways
     properties:
       cache-features: true
-      minzoom: 11
+      minzoom: 22
   - id: necountries
     geometry: linestring
     <<: *extents84
@@ -1134,7 +1134,7 @@ Layer:
           WHERE power = 'minor_line'
         ) AS power_minorline
     properties:
-      minzoom: 16
+      minzoom: 22
   - id: power-line
     geometry: linestring
     <<: *extents
@@ -1148,7 +1148,7 @@ Layer:
             OR (power = 'cable' AND tags->'location' IN ('overground', 'overhead', 'surface', 'outdoor', 'platform'))
         ) AS power_line
     properties:
-      minzoom: 14
+      minzoom: 22
   - id: protected-areas
     geometry: polygon
     <<: *extents
@@ -1170,7 +1170,7 @@ Layer:
         ) AS protected_areas
     properties:
       cache-features: true
-      minzoom: 8
+      minzoom: 22
   - id: trees
     geometry: polygon
     <<: *extents
@@ -1189,7 +1189,7 @@ Layer:
         ) AS trees
     properties:
       cache-features: true
-      minzoom: 16
+      minzoom: 22
   - id: country-names
     class: country
     geometry: point
@@ -1591,7 +1591,7 @@ Layer:
           ) AS amenity_points
     properties:
       cache-features: true
-      minzoom: 10
+      minzoom: 22
   - id: amenity-line
     geometry: linestring
     <<: *extents
@@ -1615,7 +1615,7 @@ Layer:
           ORDER BY COALESCE(layer,0)
         ) AS amenity_line
     properties:
-      minzoom: 16
+      minzoom: 22
   - id: power-towers
     geometry: point
     <<: *extents
@@ -1635,7 +1635,7 @@ Layer:
           END
         ) AS power_towers
     properties:
-      minzoom: 14
+      minzoom: 22
   - id: roads-text-ref-low-zoom
     geometry: linestring
     <<: *extents
@@ -1711,7 +1711,7 @@ Layer:
           ORDER BY way_pixels DESC NULLS LAST
         ) AS junctions
     properties:
-      minzoom: 11
+      minzoom: 22
   - id: bridge-text
     geometry: polygon
     <<: *extents
@@ -2071,7 +2071,7 @@ Layer:
           WHERE "addr:interpolation" IS NOT NULL
         ) AS interpolation
     properties:
-      minzoom: 17
+      minzoom: 22
   - id: addresses
     geometry: point
     <<: *extents
@@ -2252,7 +2252,7 @@ Layer:
           ) AS amenity_low_priority
     properties:
       cache-features: true
-      minzoom: 14
+      minzoom: 22
   - id: text-low-priority
     geometry: point
     <<: *extents
