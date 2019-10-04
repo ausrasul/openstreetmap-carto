@@ -3,10 +3,8 @@
 # All road classes colours will be generated for, in order of importance
 # (biggest first).
 roads:
-  - motorway
-  - trunk
-  - primary
-  - secondary
+    - unaccessable
+    - asdfasdf
 
 # The starting and ending hue. The range goes from 0 to 360, with 0 and 360
 # representing red.

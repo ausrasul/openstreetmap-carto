@@ -428,7 +428,7 @@ Layer:
           WHERE man_made = 'bridge'
         ) AS bridge
     properties:
-      minzoom: 22
+      minzoom: 13
   - id: buildings
     geometry: polygon
     <<: *extents
