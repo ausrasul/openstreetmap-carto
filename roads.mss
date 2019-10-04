@@ -1,36 +1,36 @@
 /* For the main linear features, such as roads and railways. */
 
-@tertiary-fill: #ffffff;
-@residential-fill: #ffffff;
-@service-fill: @residential-fill;
-@living-street-fill: #ededed;
-@pedestrian-fill: #dddde8;
-@raceway-fill: pink;
-@road-fill: #ddd;
-@footway-fill: salmon;
-@footway-fill-noaccess: #bbbbbb;
+@tertiary-fill: white;
+@residential-fill: white;
+@service-fill: white;
+@living-street-fill: white;
+@pedestrian-fill: white;
+@raceway-fill: white;
+@road-fill: white;
+@footway-fill: white;
+@footway-fill-noaccess: white;
 @steps-fill: @footway-fill;
-@steps-fill-noaccess: #bbbbbb;
-@cycleway-fill: blue;
-@cycleway-fill-noaccess: #9999ff;
-@bridleway-fill: green;
-@bridleway-fill-noaccess: #aaddaa;
-@track-fill: #996600;
-@track-fill-noaccess: #e2c5bb;
-@aeroway-fill: #bbc;
-@runway-fill: @aeroway-fill;
+@steps-fill-noaccess: white;
+@cycleway-fill: white;
+@cycleway-fill-noaccess: white;
+@bridleway-fill: white;
+@bridleway-fill-noaccess: white;
+@track-fill: white;
+@track-fill-noaccess: white;
+@aeroway-fill: white;
+@runway-fill: white;
 @taxiway-fill: @aeroway-fill;
 @helipad-fill: @aeroway-fill;
-@access-marking: #eaeaea;
-@access-marking-living-street: #cccccc;
+@access-marking: white;
+@access-marking-living-street: white;
 
 @default-casing: white;
-@tertiary-casing: #8f8f8f;
-@residential-casing: #bbb;
+@tertiary-casing: white;
+@residential-casing: white;
 @road-casing: @residential-casing;
 @service-casing: @residential-casing;
 @living-street-casing: @residential-casing;
-@pedestrian-casing: #999;
+@pedestrian-casing: white;
 @path-casing: @default-casing;
 @footway-casing: @default-casing;
 @steps-casing: @default-casing;
@@ -38,27 +38,27 @@
 @bridleway-casing: @default-casing;
 @track-casing: @default-casing;
 
-@tertiary-shield: #3b3b3b;
+@tertiary-shield: white;
 
 @unimportant-road: @residential-casing;
 
-@minor-construction: #aaa;
-@service-construction: #aaa;
+@minor-construction: white;
+@service-construction: white;
 
-@destination-marking: #c2e0ff;
-@private-marking: #efa9a9;
-@private-marking-for-red: #C26363;
+@destination-marking: white;
+@private-marking: white;
+@private-marking-for-red: white;
 
-@tunnel-casing: grey;
-@bridge-casing: black;
+@tunnel-casing: white;
+@bridge-casing: white;
 
-@motorway-tunnel-fill: lighten(@motorway-fill, 10%);
-@trunk-tunnel-fill: lighten(@trunk-fill, 10%);
-@primary-tunnel-fill: lighten(@primary-fill, 10%);
-@secondary-tunnel-fill: lighten(@secondary-fill, 5%);
-@tertiary-tunnel-fill: lighten(@tertiary-fill, 5%);
-@residential-tunnel-fill: darken(@residential-fill, 5%);
-@living-street-tunnel-fill: lighten(@living-street-fill, 3%);
+@motorway-tunnel-fill: white;
+@trunk-tunnel-fill: white;
+@primary-tunnel-fill: white;
+@secondary-tunnel-fill: white;
+@tertiary-tunnel-fill: white;
+@residential-tunnel-fill: white;
+@living-street-tunnel-fill: white;
 
 @motorway-width-z6:               0.4;
 @trunk-width-z6:                  0.4;
@@ -178,23 +178,23 @@
 @minor-service-width-z17:         3.5;
 
 @motorway-width-z18:             21;
-@motorway-link-width-z18:        13;
+@motorway-link-width-z18:        21;
 @trunk-width-z18:                21;
-@trunk-link-width-z18:           13;
+@trunk-link-width-z18:           21;
 @primary-width-z18:              21;
-@primary-link-width-z18:         13;
+@primary-link-width-z18:         21;
 @secondary-width-z18:            21;
-@secondary-link-width-z18:       13;
+@secondary-link-width-z18:       21;
 @tertiary-width-z18:             21;
-@tertiary-link-width-z18:        13;
-@residential-width-z18:          13;
-@living-street-width-z18:        13;
-@pedestrian-width-z18:           13;
-@road-width-z18:                  8.5;
-@service-width-z18:               8.5;
-@minor-service-width-z18:         4.75;
-@footway-width-z18:               1.3;
-@cycleway-width-z18:              1;
+@tertiary-link-width-z18:        21;
+@residential-width-z18:          21;
+@living-street-width-z18:        21;
+@pedestrian-width-z18:           21;
+@road-width-z18:                 21;
+@service-width-z18:              21;
+@minor-service-width-z18:        21;
+@footway-width-z18:              21;
+@cycleway-width-z18:             21;
 
 @motorway-width-z19:             27;
 @motorway-link-width-z19:        16;
@@ -248,9 +248,9 @@
 @secondary-casing-width-z17:      1;
 @major-casing-width-z17:          1;
 
-@casing-width-z18:                0.8;
-@secondary-casing-width-z18:      1;
-@major-casing-width-z18:          1;
+@casing-width-z18:                0;
+@secondary-casing-width-z18:      0;
+@major-casing-width-z18:          0;
 
 @casing-width-z19:                0.8;
 @secondary-casing-width-z19:      1;
@@ -272,36 +272,36 @@
 @major-bridge-casing-width-z16:   0.75;
 @bridge-casing-width-z17:         0.8;
 @major-bridge-casing-width-z17:   1;
-@bridge-casing-width-z18:         0.8;
-@major-bridge-casing-width-z18:   1;
+@bridge-casing-width-z18:         0;
+@major-bridge-casing-width-z18:   0;
 @bridge-casing-width-z19:         0.8;
 @major-bridge-casing-width-z19:   1;
 @bridge-casing-width-z20:         0.8;
 @major-bridge-casing-width-z20:   1;
 
-@paths-background-width:          1;
-@paths-bridge-casing-width:       0.5;
-@paths-tunnel-casing-width:       1;
+@paths-background-width:          0;
+@paths-bridge-casing-width:       0;
+@paths-tunnel-casing-width:       0;
 
 @junction-text-color:             #960000;
 @halo-color-for-minor-road:       white;
 @lowzoom-halo-color:              white;
-@lowzoom-halo-width:              1;
+@lowzoom-halo-width:              21;
 
-@motorway-oneway-arrow-color:     darken(@motorway-casing, 25%);
-@trunk-oneway-arrow-color:        darken(@trunk-casing, 25%);
-@primary-oneway-arrow-color:      darken(@primary-casing, 15%);
-@secondary-oneway-arrow-color:    darken(@secondary-casing, 10%);
-@tertiary-oneway-arrow-color:     darken(@tertiary-casing, 30%);
-@residential-oneway-arrow-color:  darken(@residential-casing, 40%);
-@living-street-oneway-arrow-color: darken(@residential-casing, 30%);
-@pedestrian-oneway-arrow-color:   darken(@pedestrian-casing, 25%);
-@raceway-oneway-arrow-color:      darken(@raceway-fill, 50%);
-@footway-oneway-arrow-color:      darken(@footway-fill, 35%);
-@steps-oneway-arrow-color:        darken(@steps-fill, 35%);
-@cycleway-oneway-arrow-color:     darken(@cycleway-fill, 25%);
-@track-oneway-arrow-color:        darken(@track-fill, 10%);
-@bridleway-oneway-arrow-color:    darken(@bridleway-fill, 15%);
+@motorway-oneway-arrow-color:     white;
+@trunk-oneway-arrow-color:        white;
+@primary-oneway-arrow-color:      white;
+@secondary-oneway-arrow-color:    white;
+@tertiary-oneway-arrow-color:     white;
+@residential-oneway-arrow-color:  white;
+@living-street-oneway-arrow-color: white;
+@pedestrian-oneway-arrow-color:   white;
+@raceway-oneway-arrow-color:      white;
+@footway-oneway-arrow-color:      white;
+@steps-oneway-arrow-color:        white;
+@cycleway-oneway-arrow-color:     white;
+@track-oneway-arrow-color:        white;
+@bridleway-oneway-arrow-color:    white;
 
 // Shield’s line wrap is based on OpenStreetMap data and not on line-wrap-width,
 // but lines are typically rather short, so we use narrow line spacing.
@@ -309,7 +309,7 @@
 @shield-line-spacing: -1.50; // -0.15 em
 @shield-size-z16: 11;
 @shield-line-spacing-z16: -1.65; // -0.15 em
-@shield-size-z18: 12;
+@shield-size-z18: 0;
 @shield-line-spacing-z18: -1.80; // -0.15 em
 @shield-spacing: 760;
 @shield-repeat-distance: 400;
