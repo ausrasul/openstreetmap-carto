@@ -8,15 +8,15 @@
 @raceway-fill: white;
 @road-fill: white;
 @footway-fill: white;
-@footway-fill-noaccess: white;
+@footway-fill-noaccess: red;
 @steps-fill: @footway-fill;
-@steps-fill-noaccess: white;
+@steps-fill-noaccess: red;
 @cycleway-fill: white;
-@cycleway-fill-noaccess: white;
+@cycleway-fill-noaccess: red;
 @bridleway-fill: white;
-@bridleway-fill-noaccess: white;
+@bridleway-fill-noaccess: red;
 @track-fill: white;
-@track-fill-noaccess: white;
+@track-fill-noaccess: red;
 @aeroway-fill: white;
 @runway-fill: white;
 @taxiway-fill: @aeroway-fill;
@@ -193,8 +193,8 @@
 @road-width-z18:                 21;
 @service-width-z18:              21;
 @minor-service-width-z18:        21;
-@footway-width-z18:              21;
-@cycleway-width-z18:             21;
+@footway-width-z18:              0;
+@cycleway-width-z18:             0;
 
 @motorway-width-z19:             27;
 @motorway-link-width-z19:        16;
@@ -284,7 +284,7 @@
 @paths-tunnel-casing-width:       0;
 
 @junction-text-color:             #960000;
-@halo-color-for-minor-road:       white;
+@halo-color-for-minor-road:       blue;
 @lowzoom-halo-color:              white;
 @lowzoom-halo-width:              21;
 

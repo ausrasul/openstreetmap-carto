@@ -10,7 +10,7 @@ roads:
 
 # The starting and ending hue. The range goes from 0 to 360, with 0 and 360
 # representing red.
-hue: [10, 106]
+hue: [106, 106]
 
 # The lightness and chroma (also known as saturation) for each type of colour.
 # Lightness ranges from 0 to 100; dark to bright.
