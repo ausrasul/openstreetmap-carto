@@ -2,7 +2,7 @@
 @station-text: darken(saturate(@station-color, 15%), 10%);
 
 #stations {
-  [railway = 'subway_entrance'][zoom >= 18] {
+  [railway = 'subway_entrance'][zoom >= 22] {
     marker-file: url('symbols/entrance.10.svg');
     marker-fill: @transportation-icon;
     marker-clip: false;
@@ -18,7 +18,7 @@
     }
   }
 
-  [railway = 'station'][zoom >= 12] {
+  [railway = 'station'][zoom >= 22] {
     marker-file: url('symbols/square.svg');
     marker-fill: @station-color;
     marker-clip: false;
@@ -50,7 +50,7 @@
   }
 
   [railway = 'halt'] {
-    [zoom >= 13] {
+    [zoom >= 22] {
       marker-file: url('symbols/square.svg');
       marker-fill: @station-color;
       marker-width: 4;
@@ -59,7 +59,7 @@
         marker-width: 6;
       }
     }
-    [zoom >= 15] {
+    [zoom >= 22] {
       text-name: "[name]";
       text-face-name: @bold-fonts;
       text-size: @standard-font-size;
@@ -96,7 +96,7 @@
   }
 
   [railway = 'tram_stop'] {
-    [zoom >= 14] {
+    [zoom >= 22] {
       marker-file: url('symbols/square.svg');
       marker-fill: @station-color;
       marker-width: 4;
@@ -105,7 +105,7 @@
         marker-width: 6;
       }
     }
-    [zoom >= 16] {
+    [zoom >= 22] {
       text-name: "[name]";
       text-face-name: @book-fonts;
       text-size: @standard-font-size;

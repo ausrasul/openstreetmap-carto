@@ -541,7 +541,7 @@ Layer:
     properties:
       cache-features: true
       group-by: layernotnull
-      minzoom: 22
+      minzoom: 16
   - id: landuse-overlay
     geometry: polygon
     <<: *extents
@@ -648,7 +648,7 @@ Layer:
             AND osm_id > 0
         ) AS ferry_routes
     properties:
-      minzoom: 8
+      minzoom: 22
   - id: turning-circle-casing
     geometry: point
     <<: *extents
