@@ -257,7 +257,7 @@ Layer:
       file: data/simplified-water-polygons-split-3857/simplified_water_polygons.shp
       type: shape
     properties:
-      maxzoom: 9
+      maxzoom: 22
   - id: ocean
     geometry: polygon
     class: ocean
@@ -347,7 +347,7 @@ Layer:
           WHERE waterway IN ('dam', 'weir', 'lock_gate')
         ) AS water_barriers_poly
     properties:
-      minzoom: 13
+      minzoom: 22
   - id: springs
     geometry: point
     <<: *extents
@@ -449,7 +449,7 @@ Layer:
           ORDER BY COALESCE(layer,0), way_area DESC
         ) AS buildings
     properties:
-      minzoom: 14
+      minzoom: 22
   - id: tunnels
     class: access
     geometry: linestring
@@ -541,7 +541,7 @@ Layer:
     properties:
       cache-features: true
       group-by: layernotnull
-      minzoom: 10
+      minzoom: 22
   - id: landuse-overlay
     geometry: polygon
     <<: *extents
@@ -559,7 +559,7 @@ Layer:
             AND building IS NULL
         ) AS landuse_overlay
     properties:
-      minzoom: 8
+      minzoom: 22
   - id: tourism-boundary
     geometry: polygon
     <<: *extents
@@ -921,7 +921,7 @@ Layer:
           ORDER BY COALESCE(layer,0)
         ) AS waterway_bridges
     properties:
-      minzoom: 12
+      minzoom: 22
   - id: bridges
     class: access
     geometry: linestring
@@ -1011,7 +1011,7 @@ Layer:
     properties:
       cache-features: true
       group-by: layernotnull
-      minzoom: 10
+      minzoom: 22
   - id: guideways
     geometry: linestring
     <<: *extents
@@ -1121,7 +1121,7 @@ Layer:
           ORDER BY admin_level::integer DESC -- With 10 as a valid value, we need to do a numeric ordering, not a text ordering
         ) AS admin_high_zoom
     properties:
-      minzoom: 13
+      minzoom: 22
   - id: power-minorline
     geometry: linestring
     <<: *extents
