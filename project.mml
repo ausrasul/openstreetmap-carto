@@ -1011,7 +1011,7 @@ Layer:
     properties:
       cache-features: true
       group-by: layernotnull
-      minzoom: 22
+      minzoom: 13
   - id: guideways
     geometry: linestring
     <<: *extents
