@@ -124,7 +124,9 @@ def download_file(
                     sys.exit("\n\n   'curl' error: download failed.\n")
             sys.stdout.flush()
 
-        u = urllib2.urlopen(url)
+        raw_request = urllib2.Request(url)
+        raw_request.add_header('User-Agent', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0')
+        u = urllib2.urlopen(raw_request)
         meta = u.info()
 
         # Compare dates and sizes
